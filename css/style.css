@@ -12,7 +12,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
 }
 .container{
     max-width: 1200px;
@@ -188,6 +188,9 @@ ul{
     .list__item-1{
         margin-left: 0!important;
     }
+    .advantages__list{
+        margin-top: 0!important;
+    }
     .phone__number > input{
         font-size: 18px!important;
     }
@@ -292,6 +295,7 @@ ul{
     font-weight: 400;
     margin-top: 188px;
     margin-bottom: 38px;
+    max-width: 400px;
 }
 
 .phone__number{
@@ -568,7 +572,7 @@ ul{
     display: flex;
     flex-direction: column;
     row-gap: 30px;
-    font-weight: 600;
+    font-weight: 500;
     margin-top: 50px;
 }
 .footer__info{
@@ -577,7 +581,7 @@ ul{
     display: flex;
     flex-direction: column;
     row-gap: 30px;
-    font-weight: 600;
+    font-weight: 500;
     margin-top: 50px;
 }
 /* Footer end */
