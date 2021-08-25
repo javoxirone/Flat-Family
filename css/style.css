@@ -14,11 +14,8 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-body{
-    overflow-x: hidden;
-}
 .container{
-    max-width: 1240px;
+    max-width: 1200px;
     width: 100%;
     padding: 0px 15px;
     margin: 0 auto;
@@ -75,6 +72,16 @@ ul{
     .phone__number > input {
         max-width: 100%!important;
     }
+    .principle__title{
+        top: 5%!important;
+        left: 5%!important;
+    }
+    .title__num{
+        font-size: 100px!important;
+    }
+    .title__text{
+        font-size: 36px!important;
+    }
 }
 
 @media (max-width: 992px) {
@@ -90,8 +97,44 @@ ul{
     .item-2{
         opacity: .5;
     }
+    .item-3{
+        display: none;
+    }
+    .item-4{
+        display: none;
+    }
+    .item-a{
+        padding-right: 0!important;
+    }
+    .principle__title{
+        display: none!important;
+    }
+    .item > .container{
+        justify-content: flex-start!important;
+    }
+    .item{
+        padding-right: 50px!important;
+    }
+    .item{
+        padding: 25px 10px!important;
+    }
+    .item-reverse{
+        padding: 25px 10px!important;
+    }
+    .advantages{
+        padding-bottom: 50px!important;
+    }
+    .principle__title-adaptive{
+        display: flex!important;
+    }
 }
-
+@media (max-width: 580px) {
+    .footer__content{
+        justify-content: center!important;
+        align-items: center!important;
+        text-align: center;
+    }
+}
 @media (max-width: 570px) {
     .phone__number > input{
         font-size: 18px!important;
@@ -124,6 +167,7 @@ ul{
     .item-2-a{
         display: block!important;
     }
+    
 }
 
 @media (max-width: 470px) {
@@ -134,6 +178,25 @@ ul{
     .phone__number > button{
         font-size: 14px!important;
         padding: 15px!important;
+    }
+}
+@media (max-width: 470px){
+    .item__title{
+        font-size: 16px!important;
+        line-height: 20px!important;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .title__num-a{
+        font-size: 96px!important;
+    }
+    .title__text-a{
+        font-size: 18px!important;
+    }
+    .footer__content > img{
+        max-width: 100%!important;
     }
 }
 
@@ -264,7 +327,7 @@ ul{
 }
 
 .advantages__list{
-    max-width: 650px;
+    max-width: 560px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -279,14 +342,14 @@ ul{
 }
 
 .item__number{
-    font-size: 150px;
+    font-size: 100px;
     color: #3B4EB1;
     line-height: 182,85px;
     font-weight: 700;
     display: inline-block;
 }
 .item__text{
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 500;
     line-height: 36,57px;
     margin-top: 30px;
@@ -304,12 +367,12 @@ ul{
 }
 .item{
     padding: 70px 0 100px;
-    font-size: 40px;
+    font-size: 32px;
     line-height: 49px;
 }
 .item-reverse{
     padding: 90px 0;
-    font-size: 40px;
+    font-size: 32px;
     line-height: 49px;
     padding-right: 45px;
 }
@@ -325,6 +388,7 @@ ul{
     font-weight: 400;
     color: #000;
     max-width: 687px;
+    z-index: 5;
 }
 .item-reverse > .container > .item__title > strong{
     font-weight: 700;
@@ -338,6 +402,7 @@ ul{
 .item > .container > .item__title{
     font-weight: 400;
     color: #000;
+    z-index: 5;
 }
 .item > .container > .item__title > strong{
     font-weight: 700;
@@ -354,12 +419,14 @@ ul{
 .item-3{
     position: absolute;
     left: -100px;
-    top: -300px;
+    top: -280px;
+    max-width: 60%;
 }
 .item-4{
     position: absolute;
-    top: 810px;
-    right: -100px;
+    top: 940px;
+    right: 0px;
+    max-width: 50%;
 }
 .principle__title{
     position: absolute;
@@ -379,6 +446,40 @@ ul{
     font-weight: 700;
     color: #fff;
 }
+
+.title__num-a{
+    font-size: 100px;
+    font-weight: 700;
+    color: #fff;
+}
+.title__text-a{
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+.principle__title-adaptive{
+    background-image: url('../img/item-3-a.png');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    
+}
+.principle__title-adaptive > .title__num-a{
+    font-size: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.principle__title-adaptive > .title__text-a{
+    font-size: 30px;
+    text-align: center;
+}
 /* Principle end */
 
 
@@ -393,7 +494,10 @@ ul{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    flex-wrap: wrap;
     column-gap: 100px;
+    row-gap: 50px;
+    
 }
 .footer__content > img{
     max-width: 308px;
