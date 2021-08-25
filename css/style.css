@@ -12,7 +12,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
 .container{
     max-width: 1200px;
@@ -77,6 +77,9 @@ ul{
     .list__item-4{
         margin-bottom: 140px;
     }
+    .advantages{
+        padding-bottom: 850px;
+    }
 }
 @media (max-width: 1800px) {
 
@@ -87,13 +90,17 @@ ul{
         left: 10%!important;
         top: 5%!important;
     }
-
 }
 
 @media (max-width: 1800px) {
     .principle__title{
         left: 3%!important;
         top: 0%!important;
+    }
+}
+@media (max-width: 1600px) {
+    .advantages{
+        padding-bottom: 400px;
     }
 }
 @media (max-width: 1600px) {
@@ -130,7 +137,7 @@ ul{
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
     .list__item-3{
         margin: 0px 0px 10px 0px!important;
     }
@@ -187,9 +194,6 @@ ul{
 @media (max-width: 570px) {
     .list__item-1{
         margin-left: 0!important;
-    }
-    .advantages__list{
-        margin-top: 0!important;
     }
     .phone__number > input{
         font-size: 18px!important;
@@ -295,7 +299,6 @@ ul{
     font-weight: 400;
     margin-top: 188px;
     margin-bottom: 38px;
-    max-width: 400px;
 }
 
 .phone__number{
@@ -344,7 +347,6 @@ ul{
 /* Advantages start */
 .advantages{
     padding-top: 20px;
-    padding-bottom: 666px;
     position: relative;
 }
 
@@ -369,7 +371,7 @@ ul{
 
 .item-2{
     position: absolute;
-    top: 1257px;
+    top: 1457px;
     right: 0;
     max-width: 50%;
     z-index: -1;
@@ -474,7 +476,6 @@ ul{
 }
 .item-a{
     background-color: #F7F7F7;
-    padding-right: 50px!important;
     padding: 42px 0;
 }
 .item-a > .container > .item__title > strong{
